@@ -22,7 +22,7 @@ export default class TodosList extends Component{
     }
     
     componentDidMount(){
-        axios.get('http://localhost:4000/todos/')
+        axios.get('https://evening-badlands-83186.herokuapp.com/todos/')
         .then(response => {
             this.setState({ todos:response.data });
         })
