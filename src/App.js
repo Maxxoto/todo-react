@@ -3,6 +3,7 @@ import { BrowserRouter as Router , Route, Link } from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.js";
 
 //Untuk import page lain
 import CreateTodo from "./components/create-todo.component"
@@ -14,15 +15,18 @@ class App extends Component {
     return (
         <Router>
             <div className="container">
+
                 <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                    <a className="navbar-brand" href="#" target="_blank">
+                    <a class="navbar-brand" href="#" target="_blank">
                         <img src={logo} width="30" height="30" alt="Blank"/>
                     </a>
-
                     <Link to="/" className="navbar-brand"> MERN-Stack Todo App </Link>
-                    <div className="collapse navbar-collapse">
-                        <ul className="navbar-nav mr-auto">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul className="navbar-nav mr-auto">
                             <li className="navbar-item">
                                 <Link to="/" className="nav-link"> Todos </Link>
                             </li>
