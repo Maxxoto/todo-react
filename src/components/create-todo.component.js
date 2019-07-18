@@ -64,6 +64,7 @@ export default class TodosList extends Component{
 
     render(){
         return (
+            <div className="container">
             <div style={{marginTop:10}}>
                 <h3> Create new Todo</h3>
                     <form onSubmit={this.onSubmit}>
@@ -124,6 +125,7 @@ export default class TodosList extends Component{
                             <input type="submit" value="Create Todo" className="btn btn-primary"/>
                         </div>
                     </form>
+            </div>
             </div>
         );
     }
