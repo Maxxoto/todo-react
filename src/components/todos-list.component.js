@@ -2,13 +2,14 @@ import React, {Component} from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
+
 const Todo = props =>(
     <tr>
         <td>{props.todo.todo_description}</td>
         <td>{props.todo.todo_responsible}</td>
         <td>{props.todo.todo_priority}</td>
         <td>
-            <Link to={"/edit/"+props.todo._id}>Edit</Link>
+            <Link className="btn btn-primary" to={"/edit/"+props.todo._id}>Edit</Link>
         </td>
     </tr>
 )
@@ -43,8 +44,8 @@ export default class TodosList extends Component{
 
     render(){
         return (
-            <div>
-            <h3>Todos List</h3>
+            <div className="container">
+            <h3 className="text-center">Todos List</h3>
             <table className="table table-striped" style={{ marginTop: 20 }} >
                 <thead>
                     <tr>

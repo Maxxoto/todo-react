@@ -78,7 +78,7 @@ export default class TodosList extends Component{
 
     render(){
         return (
-            <div>
+            <div className="container">
                 <h3 align="center">Update Todo</h3>
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group"> 
