@@ -38,19 +38,19 @@ export default class TodosList extends Component{
 
     onChangeTodoDescription(e){
         this.setState({
-            todo_description:e.target.value
+            todo_description: e.target.value
         });
     }
 
     onChangeTodoResponsible(e){
         this.setState({
-            todo_responsible:e.target.value
+            todo_responsible: e.target.value
         });
     }
 
     onChangeTodoPriority(e){
         this.setState({
-            todo_priority:e.target.value
+            todo_priority: e.target.value
         });
     }
 
@@ -68,7 +68,7 @@ export default class TodosList extends Component{
             todo_completed: this.state.todo_completed
         };
         console.log(obj);
-        axios.post('https://evening-badlands-83186.herokuapp.com/todos/update'+this.props.match.params.id,obj)
+        axios.post('https://evening-badlands-83186.herokuapp.com/todos/update/'+this.props.match.params.id, obj)
         .then(res => console.log(res.data));
 
         this.props.history.push('/');
