@@ -1,4 +1,4 @@
-# BelajarReact Todo App 
+# Todo App 
 
 First project using ReactJS Todo App (https://belajar-react.herokuapp.com/)
 
