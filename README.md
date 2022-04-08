@@ -1,6 +1,6 @@
 # Todo App 
 
-First project using ReactJS Todo App (https://belajar-react.herokuapp.com/)
+ReactJS Todo App (https://belajar-react.herokuapp.com/)
 
 ## Project Overview
 
